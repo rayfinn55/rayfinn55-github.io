@@ -1,4 +1,4 @@
-# Personal Web Site
+# Personal Website
 
 ## Introduction
 
