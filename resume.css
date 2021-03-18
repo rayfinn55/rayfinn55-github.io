@@ -1,0 +1,274 @@
+body {
+    --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+  }
+  /* .nav {
+    border: solid white 2px; 
+    outline: none; 
+    background-color: cornflowerblue; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 15px; 
+    height: 20px;
+    font-family: Didot, serif;
+} */
+.navbar{
+  /* display: flex; */
+}
+
+#headline {
+    justify-content: center;
+    font-family: Didot, serif;
+}
+img {
+  display: block;
+}
+#img1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#second-headline {
+    animation: color-change 2s infinite;
+    font-size: 25px;
+    font-family: Didot, serif;
+
+  }
+  
+  @keyframes color-change {
+    0% { color: black; }
+    50% { color: cornflowerblue; }
+    100% { color: black; }
+  }
+ 
+
+.section1 {
+text-align: center;
+}
+#snowman-text {
+  border: rgba(100, 149, 237, 50%) groove 10px;
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Bookman, serif;
+  font-size: 20px;
+  align-items: flex-end;
+  background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+
+}
+#FSW-adv-text {
+  border: rgba(100, 149, 237, 50%) groove 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  font-family: Bookman, serif;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+
+}
+
+#project-image1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 250px;
+    width: 300px;
+    text-align: left;
+}
+#project-image2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 250px;
+  width: 300px;
+  text-align: left;
+}  
+
+#biotext {
+    border: rgba(100, 149, 237, 50%) groove 10px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    font-family: Bookman, serif;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+
+}
+#toTopbutton {
+    display: block;
+    flex-wrap: wrap;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: solid white 2px; 
+    outline: none; 
+    background-color: cornflowerblue; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 15px; 
+    height: 20px;
+  }
+  
+  #toTopbutton:hover {
+    background-color: #555; 
+  }
+  .Bio:hover{
+    background-color: #555;
+    cursor: pointer; 
+
+  }
+  .Projects:hover{
+    background-color: #555;
+    cursor: pointer; 
+
+  }
+  .Experience:hover {
+    background-color: #555;
+    cursor: pointer; 
+
+  }
+  .Skills:hover {
+    background-color: #555;
+    cursor: pointer; 
+
+  }
+  .Contact-Info:hover {
+    background-color: #555;
+    cursor: pointer; 
+
+  }
+
+  .icon {
+    height: 110px;
+  }
+
+  #skills-section { 
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: center;
+    grid-gap: 75px;
+    align-items: space-evenly;
+    /* grid-auto-rows: minmax(100px, auto); */
+  }
+  @media screen and (max-width: 600px) {
+    #skills-section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 10px;
+    }
+    .section1{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .section2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    #Project-Section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+  }
+  .divider {
+    border: black solid 1px;
+    margin: 20px;
+  }
+  .worktext{
+    border: rgba(100, 149, 237, 50%) groove 10px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    font-family: Bookman, serif;
+    font-size: 22px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+  }
+   
+  .workimg {
+    height: 100px;
+  }
+h4 {
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.workbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+#pursuittext {
+ border: rgba(100, 149, 237, 50%) groove 10px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    font-family: Bookman, serif;
+    font-size: 22px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+}
+
+/* #edubox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+} */
+.leftbox2 {
+float: left;
+}
+.rightbox2 {
+  float: right;
+}
+
+.footerButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkbutton {
+  width: 100px;
+  padding: 10px;
+}
+.linkbutton:hover{
+  background-color: #555;
+  cursor: pointer; 
+}
