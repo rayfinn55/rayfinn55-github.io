@@ -19,7 +19,7 @@ body {
     position: static;
     display: block;
     justify-content: center;
-    color: cornflowerblue;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -170,7 +170,7 @@ body {
   }
 
   .icons {
-    border: 1px solid #555;
+    /* border: 1px solid #555; */
   display: flex;
   position: relative;
   align-items: center;
@@ -182,10 +182,14 @@ body {
   }
 
   #skills-section { 
-    display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px;
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg);
+    width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 100px 100px;
+  grid-auto-flow: column;
+  gap: 20px;
+    justify-content: space-between;
   }
   .bot{
     display: flex;
@@ -222,8 +226,14 @@ justify-content: center;
   }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     .linkbutton {
-      display: none;
+      animation: color-change 2s infinite;
     }
+
+  @keyframes color-change {
+    0% { color: black; }
+    50% { color: cornflowerblue; }
+    100% { color: black; }
+  }
     iframe{
       display: none;
     }
@@ -252,10 +262,24 @@ h4 {
 }
 
 .linkbutton {
-  width: 100px;
+  width: 30px;
   padding: 10px;
 }
 .linkbutton:hover{
   background-color: #555;
   cursor: pointer; 
+}
+.icons {
+-webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@keyframes icons {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
 }
