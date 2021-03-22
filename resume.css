@@ -12,11 +12,11 @@ body {
 
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(0, 0, 0, 0.3);
   }
   
   .topnav a {
-    float: left;
+    position: static;
     display: block;
     justify-content: center;
     color: cornflowerblue;
@@ -32,8 +32,8 @@ body {
   }
   
   .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: palevioletred;
+    color: black;
   }
   
   .topnav .icon {
@@ -45,6 +45,7 @@ body {
     .topnav a.icon {
       float: right;
       display: block;
+      background-color: rgba(245, 245, 245, 25%);
     }
   }
   
@@ -52,7 +53,7 @@ body {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
-      right: 0;
+      right: -25;
       top: 0;
     }
     .topnav.responsive a {
@@ -168,18 +169,29 @@ body {
     background-color: #555; 
   }
 
-  .icon {
+  .icons {
+    border: 1px solid #555;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
     height: 110px;
+  }
+  .skillstitle {
+    float: top;
   }
 
   #skills-section { 
     display: grid;
-    grid-template-columns: repeat(4, 150px);
-    justify-content: center;
-    grid-gap: 75px;
-    align-items: space-evenly;
-    /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg);
   }
+  .bot{
+    display: flex;
+    justify-content: center;
+  }
+
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     #skills-section {
       display: flex;
@@ -188,7 +200,14 @@ body {
       align-items: center;
       grid-gap: 10px;
     }
-    
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .section1 {
+        display: flex;
+        flex-wrap: wrap;
+justify-content: center;    
+    align-items: center;      }
+    }
+
     #Project-Section {
       display: flex;
       flex-wrap: wrap;
@@ -214,50 +233,22 @@ body {
     border: black solid 1px;
     margin: 20px;
   }
-  .worktext{
-    border: rgba(100, 149, 237, 50%) groove 10px;
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
-    font-family: Bookman, serif;
-    font-size: 22px;
-    flex-direction: column;
-    align-items: flex-end;
-    background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
-  }
-   
-  .workimg {
-    height: 100px;
-  }
+  
 h4 {
   font-size: 30px;
   font-style: italic;
   text-decoration: underline;
 }
 
-.workbox {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-#pursuittext {
- border: rgba(100, 149, 237, 50%) groove 10px;
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
-    font-family: Bookman, serif;
-    font-size: 22px;
-    flex-direction: column;
-    align-items: flex-end;
-    background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
-}
 
 .footerButtons {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  bottom: 0;
+  width: 100%;
+  left: 0%;
+  justify-content: space-evenly;
 }
 
 .linkbutton {

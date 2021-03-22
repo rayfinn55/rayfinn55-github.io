@@ -1,23 +1,35 @@
-mybutton = document.getElementById("myBtn");
-window.onscroll = scrollFunction();
+  document.addEventListener("DOMContentLoaded", () => {
+    let projectBtn = document.getElementById("projects")
+    projectBtn.addEventListener("click", () => {
+      let homeIcon = document.getElementById("scroll")
+      homeIcon.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline:"center",
+      });
+    })
+  })
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "none";
-    } else {
-      mybutton.style.display = "block";
-    }
-  }
+  document.addEventListener("DOMContentLoaded", () => {
+    let skillsbtn = document.getElementById("skills")
+    skillsbtn.addEventListener("click", () => {
+      let homeIcon = document.getElementById("skills-section")
+      homeIcon.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline:"center",
+      });
+    })
+  })
   
-  function topFunction() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;
-  }
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+  document.addEventListener("DOMContentLoaded", () => {
+    let homeBtn = document.getElementById("home")
+    homeBtn.addEventListener("click", () => {
+      let homeIcon = document.getElementById("img1")
+      homeIcon.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline:"center",
+      });
+    })
+  })
