@@ -35,8 +35,8 @@
   })
 
   document.addEventListener("DOMContentLoaded", () => {
-    let resumeClick = document.getElementById("mewresume")
+    let resumeClick = document.getElementById("contactme")
     resumeClick.addEventListener("click", () => {
-      window.alert("You clicked on my favorite button!")
+      window.alert("Check out the footer button below!")
     })
   })
