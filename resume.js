@@ -33,3 +33,10 @@
       });
     })
   })
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let resumeClick = document.getElementById("mewresume")
+    resumeClick.addEventListener("click", () => {
+      window.alert("You clicked on my favorite button!")
+    })
+  })
